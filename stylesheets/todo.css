@@ -1,0 +1,100 @@
+<style type="text/css">
+	body {
+		background-color: #000;
+	}
+
+	h1 {
+		font-family: serif;
+    	font-size: 2em;
+    	text-align: center;
+	}
+
+	#todoListContainer {
+        max-width: 500px;
+    	margin: 25px auto;
+	    border-radius: 5px;
+	    background: #efefef;
+	    opacity: 0.6;
+	    box-shadow: 1px 1px 5px #888888;
+	    padding: 10px;	
+	}
+
+	#inputContainer {
+		width: 98%;
+	}
+
+	#todoItemInput {
+		width: 80%;
+    	height: 1.5em;
+    	margin: 0 10px 24px 23px;
+    	padding: 0 .5em;
+    	font-size: 1.1em;
+
+	}
+
+	#addItemButton {
+	    /* width: 1.5em; */
+	    /* padding-top: 0; */
+	    border: none;
+	    /* height: 1.5em; */
+	    font-size: 2em;
+	    margin: auto;
+	    padding: 0;
+	    color: #555;
+	    font-weight: 200;
+	    background: none;
+	}
+
+	#listContainer {
+		width: 500px;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	#listContainer li {
+		border-bottom: 1px solid #efefef;
+	    background: #fff;
+	    opacity: 1;
+	    padding: 10px;
+	    color: #000;
+	    font-family: sans-serif;
+	}
+
+	#listContainer li:last-child {
+		border: none;
+	}
+
+	#listContainer li input{
+		margin-right: 6px;
+	}
+
+	.checked {
+		text-decoration: line-through;
+		color: #aaa;	
+	}
+
+	.clicktoDelete {
+		float: right;
+    	font-size: 1.1em;
+    	color: #555;
+    	cursor: pointer;
+	}
+
+
+	
+	/*input[type=checkbox] {
+    	visibility: hidden;
+	}
+
+	.squaredFour  {
+    cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border-radius: 4px;
+    border: black 1px solid;
+	}*/
+
+</style>
