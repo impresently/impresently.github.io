@@ -1,5 +1,3 @@
-<script type="text/javascript">
-
 "use strict";
 window.onload = function() {
     // reference to the input box
@@ -135,6 +133,3 @@ function addTodoItem(list, todoItemText) {
     todoItemInput.focus();
 
 };
-
-
-</script>
