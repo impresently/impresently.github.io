@@ -25,8 +25,7 @@ window.onload = function() {
     // reference to the input button
     var addButton = document.getElementById("addItemButton");
 
-    // focus the text box upon page load
-    todoItemInput.focus();
+
 
     // when button is clicked, add entry from the text box
     addButton.onclick = function() {
@@ -37,6 +36,9 @@ window.onload = function() {
         // add new item to the list
         addTodoItem(document.getElementById("listContainer"), todoItemText);
     };
+
+    // focus the text box upon page load
+    todoItemInput.focus();
 };
 
 function toDoItemStatus() {
