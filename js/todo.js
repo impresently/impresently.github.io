@@ -16,7 +16,7 @@ window.onload = function() {
             addTodoItem(document.getElementById("listContainer"), todoItemText);
 
         }
-        
+
     };
 
 
@@ -76,10 +76,10 @@ function removeTodoFromMinus() {
 function addTodoItem(list, todoItemText) {
 
     // if text box is empty or a single white space, do not add entry, then refocus on the text box
-     if (todoItemText === "" || todoItemText === " ") {
-         todoItemInput.focus();
-         return false;
-     }
+    if (todoItemText === "" || todoItemText === " ") {
+        todoItemInput.focus();
+        return false;
+    }
 
     // create random id name
     var idNumber = (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
