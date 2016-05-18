@@ -68,7 +68,6 @@ function renameItem() {
 
 function removeTodoFromMinus() {
     // change style of item to display:none to remove item from list
-    //alert("removeTodo");
     this.parentElement.style.display = "none";
     todoItemInput.focus();
 }
@@ -88,14 +87,10 @@ function addTodoItem(list, todoItemText) {
     // create a new to do list item with a random id name
     var toDoItem = document.createElement('li');
     toDoItem.id = "li_" + idNumber;
-    //toDoItem.ondblclick = removeTodo;
 
     var todoCheckbox = document.createElement("input");
     todoCheckbox.type = "checkbox";
-    //todoCheckbox.className = "squaredFour";
 
-    //var checkboxLabel = document.createElement('label');
-    //label.htmlFor = "checkbox";
 
     var clickToDelete = document.createElement("div");
     clickToDelete.className = "clicktoDelete";
@@ -115,7 +110,6 @@ function addTodoItem(list, todoItemText) {
     todoSpan.onclick = renameItem;
 
     toDoItem.appendChild(todoCheckbox);
-    //toDoItem.appendChild(checkboxLabel);
     toDoItem.appendChild(todoSpan);
     toDoItem.appendChild(clickToDelete);
 
