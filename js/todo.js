@@ -16,10 +16,7 @@ window.onload = function() {
             addTodoItem(document.getElementById("listContainer"), todoItemText);
 
         }
-
-        // focus the text box upon page load
-       //  todoItemInput.focus();
-
+        
     };
 
 
@@ -68,13 +65,6 @@ function toDoItemStatus() {
 function renameItem() {
     alert("renameItem");
 }
-
-//function removeTodo() {
-    // change style of item to display:none to remove item from list
-    //alert("removeTodo");
-    //this.style.display = "none";
-    //todoItemInput.focus();
-//}
 
 function removeTodoFromMinus() {
     // change style of item to display:none to remove item from list
