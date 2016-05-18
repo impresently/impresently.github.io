@@ -3,8 +3,6 @@ window.onload = function() {
     // reference to the input box
     var todoItemInput = document.getElementById("todoItemInput");
 
-    // focus the text box upon page load
-    todoItemInput.focus();
 
     // hitting enter (13) adds entry
     todoItemInput.onkeyup = function(event) {
@@ -18,6 +16,10 @@ window.onload = function() {
             addTodoItem(document.getElementById("listContainer"), todoItemText);
 
         }
+
+        // focus the text box upon page load
+       //  todoItemInput.focus();
+
     };
 
 
@@ -90,8 +92,6 @@ function addTodoItem(list, todoItemText) {
          return false;
      }
 
-    // todoItemInput.focus();
-
     // create random id name
     var idNumber = (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 
@@ -136,6 +136,6 @@ function addTodoItem(list, todoItemText) {
     todoItemInput.value = "";
 
     // return focus to text box
-    todoItemInput.focus();
+     todoItemInput.focus();
 
 };
