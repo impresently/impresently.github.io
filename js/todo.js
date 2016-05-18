@@ -95,19 +95,18 @@ function addTodoItem(list, todoItemText) {
     var clickToDelete = document.createElement("div");
     clickToDelete.className = "clicktoDelete";
     clickToDelete.innerHTML = "&#10005;"
-    clickToDelete.onclick = removeTodoFromMinus;
-
+    clickToDelete.addEventListener("click", removeTodoFromMinus);
 
     // create html id of check box and add the the number of list items to the id
     todoCheckbox.id = "cb_" + idNumber;
-    todoCheckbox.onclick = toDoItemStatus;
+    todoCheckbox.addEventListener("click", toDoItemStatus);
 
     var todoSpan = document.createElement("span");
 
     // create html id of list item and add the the number of list items to the id
     todoSpan.id = "item_" + idNumber;
     todoSpan.innerHTML = todoItemText;
-    todoSpan.onclick = renameItem;
+    todoSpan.addEventListener("click", renameItem);
 
     toDoItem.appendChild(todoCheckbox);
     toDoItem.appendChild(todoSpan);
@@ -116,10 +115,10 @@ function addTodoItem(list, todoItemText) {
     // creates a child of the list item
     list.appendChild(toDoItem);
 
-    // clear text box
+    // clear input
     todoItemInput.value = "";
 
     // return focus to text box
-     todoItemInput.focus();
+    todoItemInput.focus();
 
 };
