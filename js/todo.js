@@ -3,6 +3,9 @@ window.onload = function() {
     // reference to the input box
     var todoItemInput = document.getElementById("todoItemInput");
 
+    // focus the text box upon page load
+    todoItemInput.focus();
+
     // hitting enter (13) adds entry
     todoItemInput.onkeyup = function(event) {
 
@@ -17,11 +20,11 @@ window.onload = function() {
         }
     };
 
-    // focus the text box upon page load
-    todoItemInput.focus();
+
 
     // reference to the input button
     var addButton = document.getElementById("addItemButton");
+
 
 
     // when button is clicked, add entry from the text box
@@ -33,6 +36,7 @@ window.onload = function() {
         // add new item to the list
         addTodoItem(document.getElementById("listContainer"), todoItemText);
     });
+
 
     // focus the text box upon page load
     todoItemInput.focus();
@@ -56,6 +60,7 @@ function toDoItemStatus() {
         todoItemText.className = "";
         todoItemText.parentElement.style.backgroundColor = "#fff";
     }
+    todoItemInput.focus();
 }
 
 function renameItem() {
