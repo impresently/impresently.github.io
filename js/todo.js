@@ -67,12 +67,12 @@ function renameItem() {
     alert("renameItem");
 }
 
-function removeTodo() {
+//function removeTodo() {
     // change style of item to display:none to remove item from list
     //alert("removeTodo");
-    this.style.display = "none";
-    todoItemInput.focus();
-}
+    //this.style.display = "none";
+    //todoItemInput.focus();
+//}
 
 function removeTodoFromMinus() {
     // change style of item to display:none to remove item from list
@@ -85,10 +85,12 @@ function removeTodoFromMinus() {
 function addTodoItem(list, todoItemText) {
 
     // if text box is empty or a single white space, do not add entry, then refocus on the text box
-    if (todoItemText === "" || todoItemText === " ") {
-        return false;
-        todoItemInput.focus();
-    }
+     if (todoItemText === "" || todoItemText === " ") {
+         todoItemInput.focus();
+         return false;
+     }
+
+    // todoItemInput.focus();
 
     // create random id name
     var idNumber = (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
