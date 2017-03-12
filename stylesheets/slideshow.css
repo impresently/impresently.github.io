@@ -1,0 +1,11 @@
+/*
+essential styles:
+these make the slideshow work
+*/
+
+.activeSlide {
+  width: 200px;
+  height: 200px;
+  background: purple;
+  font-size: 50px;
+}
