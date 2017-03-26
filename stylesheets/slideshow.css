@@ -2,10 +2,51 @@
 essential styles:
 these make the slideshow work
 */
+#sliderControls {
+	width: 25px;
+	float: left;
+	margin: 20px 0 20px 10px;
+}
 
-.activeSlide {
-  width: 200px;
-  height: 200px;
-  background: purple;
-  font-size: 50px;
+#sliderControls button { 
+	width: 35px;
+	height: 35px;
+	margin: 2px 0;
+	font-size: 1em;
+	color: white;
+	background-color: #bbb;
+	border: none;
+	cursor: pointer;
+	
+}
+
+#sliderControls button:focus {
+	outline:0;
+}
+
+#sliderControls button:active {
+	background-color: #ddd;
+}
+
+.slide img { 
+	opacity: 0.5;
+}
+
+#slidesContainer {
+	margin: auto;
+	width: 350px;
+}
+
+#slidesContainer div {
+	height: 200px;
+	float: left;
+}
+
+.slide {
+	width: 300px;
+	display: none;	
+}
+
+.current {
+	display:block;
 }

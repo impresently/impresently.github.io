@@ -5,18 +5,32 @@
 
 
 <title>Slideshow</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <link rel="stylesheet" href="stylesheets/slideshow.css">
-<script type="text/javascript" src="js/slideshow.js"></script>
 
 </head>
 
 <body>
 
-<div id="slideWheel">
-    <div id="slide"></div>
-  </div>
+<div>
+    <div id="slidesContainer">
+        <div class="slide current" id="a"><img src="http://placehold.it/300x200?text=A"/></div>
+        <div class="slide" id="b"><img src="http://placehold.it/300x200?text=B"/></div>
+        <div class="slide" id="c"><img src="http://placehold.it/300x200?text=C"/></div>
+        <div class="slide" id="d"><img src="http://placehold.it/300x200?text=D"/></div>
+        <div class="slide" id="e"><img src="http://placehold.it/300x200?text=E"/></div>
+    </div>    
+    <div id ="sliderControls">
+        <button id="previous">&#9650;</button>
+        <button id="play">&#9658;</button>
+        <button id="pause">&#10074;&#10074;</button>
+        <button id="next">&#9660;</button>
+    </div>
+</div>
 
 </body>
+
+<script type="text/javascript" src="js/slideshow.js"></script>
+
 </html>
 
